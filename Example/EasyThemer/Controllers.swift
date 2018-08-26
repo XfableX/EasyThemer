@@ -2,11 +2,12 @@
 //  ViewController.swift
 //  EasyThemer
 //
-//  Created by wfltaylor@gmail.com on 08/25/2018.
-//  Copyright (c) 2018 wfltaylor@gmail.com. All rights reserved.
+//  Created by William Taylor on 08/25/2018.
+//  Copyright (c) 2018 William Taylor. All rights reserved.
 //
 
 import UIKit
+import EasyThemer
 
 class ViewController: UIViewController {
 
@@ -20,5 +21,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func theme2(_ sender: Any) {
+        ThemeEngine.standard.setTheme(theme: PrimaryTheme())
+    }
+    @IBAction func theme1(_ sender: Any) {
+        ThemeEngine.standard.setTheme(theme: DarkTheme())
+    }
 }
 
