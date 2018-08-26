@@ -9,7 +9,7 @@
 import UIKit
 import EasyThemer
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +26,12 @@ class ViewController: UIViewController {
     }
     @IBAction func theme1(_ sender: Any) {
         ThemeEngine.standard.setTheme(theme: DarkTheme())
+    }
+}
+class MainNavigationController: UINavigationController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
     }
 }
 

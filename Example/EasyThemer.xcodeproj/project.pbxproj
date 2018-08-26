@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		607FACD81AFB9204008FA782 /* Controllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* Controllers.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		9C358A6E213229BD00AF18A2 /* DarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C358A6D213229BD00AF18A2 /* DarkTheme.swift */; };
+		9C5B57B221322954003C0D33 /* PrimaryTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5B57B121322954003C0D33 /* PrimaryTheme.swift */; };
 		B79B1CD1EB19E4B329B13AE0 /* Pods_EasyThemer_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86398E98C6656107DF0B777E /* Pods_EasyThemer_Tests.framework */; };
 		C84884469B444CE1D290E707 /* Pods_EasyThemer_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2743883F6B67015814A3BE4E /* Pods_EasyThemer_Example.framework */; };
 /* End PBXBuildFile section */
@@ -29,13 +31,13 @@
 
 /* Begin PBXFileReference section */
 		0C6450B0C189A317BD901A02 /* Pods-EasyThemer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyThemer_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyThemer_Example/Pods-EasyThemer_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		24CEFBA7E7707377C2C56495 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		24CEFBA7E7707377C2C56495 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		2743883F6B67015814A3BE4E /* Pods_EasyThemer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyThemer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4018770494ACD99161D2DBA3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4018770494ACD99161D2DBA3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* EasyThemer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyThemer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* Controllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controllers.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -44,9 +46,11 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7E3C0E39932CFDDB4B597071 /* Pods-EasyThemer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyThemer_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyThemer_Tests/Pods-EasyThemer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		86398E98C6656107DF0B777E /* Pods_EasyThemer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyThemer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C358A6D213229BD00AF18A2 /* DarkTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkTheme.swift; sourceTree = "<group>"; };
+		9C5B57B121322954003C0D33 /* PrimaryTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTheme.swift; sourceTree = "<group>"; };
 		A0C80783B707E5799E3C41E9 /* Pods-EasyThemer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyThemer_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyThemer_Tests/Pods-EasyThemer_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A92CDE618B9B76C6DD0BD651 /* Pods-EasyThemer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyThemer_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyThemer_Example/Pods-EasyThemer_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B5A530A3CC01897429D4CD9F /* EasyThemer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = EasyThemer.podspec; path = ../EasyThemer.podspec; sourceTree = "<group>"; };
+		B5A530A3CC01897429D4CD9F /* EasyThemer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = EasyThemer.podspec; path = ../EasyThemer.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +109,12 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				607FACD71AFB9204008FA782 /* Controllers.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				9C5B57B32132295B003C0D33 /* SampleThemes */,
 			);
 			name = "Example for EasyThemer";
 			path = EasyThemer;
@@ -148,6 +153,15 @@
 				4018770494ACD99161D2DBA3 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		9C5B57B32132295B003C0D33 /* SampleThemes */ = {
+			isa = PBXGroup;
+			children = (
+				9C5B57B121322954003C0D33 /* PrimaryTheme.swift */,
+				9C358A6D213229BD00AF18A2 /* DarkTheme.swift */,
+			);
+			name = SampleThemes;
 			sourceTree = "<group>";
 		};
 		DF58152FDB3B2C682B0E3A6D /* Frameworks */ = {
@@ -212,10 +226,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 5RTMJNH82H;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 5RTMJNH82H;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -322,8 +338,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				9C5B57B221322954003C0D33 /* PrimaryTheme.swift in Sources */,
+				607FACD81AFB9204008FA782 /* Controllers.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				9C358A6E213229BD00AF18A2 /* DarkTheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +487,7 @@
 			baseConfigurationReference = 0C6450B0C189A317BD901A02 /* Pods-EasyThemer_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5RTMJNH82H;
 				INFOPLIST_FILE = EasyThemer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -484,6 +503,7 @@
 			baseConfigurationReference = A92CDE618B9B76C6DD0BD651 /* Pods-EasyThemer_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5RTMJNH82H;
 				INFOPLIST_FILE = EasyThemer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -498,6 +518,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7E3C0E39932CFDDB4B597071 /* Pods-EasyThemer_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 5RTMJNH82H;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -520,6 +541,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A0C80783B707E5799E3C41E9 /* Pods-EasyThemer_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 5RTMJNH82H;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
